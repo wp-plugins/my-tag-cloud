@@ -20,9 +20,9 @@ Activate like any plugin. Just copy the my_tag_cloud.php file in the plugins dir
 
 == Credits ==
 
-Mrs. Kim Woodbridge at http://www.kimwoodbridge.com for creating a post to inspire me :)
+Ms. Kim Woodbridge at http://www.kimwoodbridge.com for creating a post to inspire me :)
 
-Mrs. Yael K. Miller from http://www.twitter.com/MillerMosaicLLC actually made a request over here: http://www.kimwoodbridge.com/if-you-could-have-any-wordpress-plugin-what-would-you-want/#comment-1924
+Ms. Yael K. Miller from http://www.twitter.com/MillerMosaicLLC actually made a request over here: http://www.kimwoodbridge.com/if-you-could-have-any-wordpress-plugin-what-would-you-want/#comment-1924
 
 == Contact ==
 
