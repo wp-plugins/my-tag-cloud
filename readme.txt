@@ -1,7 +1,7 @@
 === My Tag Cloud ===
 Tags: tags, tag cloud
 Requires at least: 2.1
-Tested up to: 2.6.3
+Tested up to: 2.7.1
 Stable tag: trunk
 
 My tag cloud provides you with a widget that actually gives you the ability to list the tags of your posts in a diiferent way than a tag cloud.
