@@ -1,7 +1,7 @@
 === My Tag Cloud ===
 Tags: tags, tag cloud
 Requires at least: 2.1
-Tested up to: 2.7.1
+Tested up to: 2.8
 Stable tag: trunk
 
 My tag cloud provides you with a widget that actually gives you the ability to list the tags of your posts in a diiferent way than a tag cloud.
@@ -28,3 +28,8 @@ Ms. Yael K. Miller from http://www.twitter.com/MillerMosaicLLC actually made a r
 
 Suggestion, fixes, rants, congratulations, gifts etc to stratosg@stratosector.net
 Also visit the plugin's page at http://www.stratos.me/wp-plugins/my-tag-cloud/
+
+== Changelog ==
+
+=1.1
+*Fixed a small problem on the dropdown links

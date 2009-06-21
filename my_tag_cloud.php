@@ -5,7 +5,7 @@ Plugin Name: My Tag Cloud
 Plugin URI: http://www.stratos.me/wp-plugins/my-tag-cloud
 Description: It provides you with a widget to show your tag cloud with an alternative way. First 5 tags will be on a list and the rest will be on a dropdown. Clicking takes you to the tag page. There are a few preferences you can set in the code.
 Author: stratosg
-Version: 1.0
+Version: 1.1
 Author URI: http://www.stratos.me
 */
 
@@ -51,7 +51,7 @@ function widget_mytagcloud($args) {
 		echo '<select id="mytags_select" onchange="goOnTagSelect()">
 				<option>Choose tag...</option>';
 		for($i = $list_tags; $i<count($tags); $i++){
-			echo '<option value="'.$tags[$i]['name'].'">'.$tags[$i]['name'].' ('.$tags[$i]['count'].')</option>';
+			echo '<option value="'.$tags[$i]['slug'].'">'.$tags[$i]['name'].' ('.$tags[$i]['count'].')</option>';
 		}
 		echo '</select>';
 	}
