@@ -31,5 +31,5 @@ Also visit the plugin's page at http://www.stratos.me/wp-plugins/my-tag-cloud/
 
 == Changelog ==
 
-=1.1
+= 1.1 =
 *Fixed a small problem on the dropdown links
