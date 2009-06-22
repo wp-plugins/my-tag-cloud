@@ -32,4 +32,7 @@ Also visit the plugin's page at http://www.stratos.me/wp-plugins/my-tag-cloud/
 == Changelog ==
 
 = 1.1 =
-*Fixed a small problem on the dropdown links
+* Fixed a small problem on the dropdown links
+
+= 1.2 =
+* Added the ability to detect the permalink structure and act accordingly.
