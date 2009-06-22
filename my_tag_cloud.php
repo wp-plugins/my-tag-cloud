@@ -5,7 +5,7 @@ Plugin Name: My Tag Cloud
 Plugin URI: http://www.stratos.me/wp-plugins/my-tag-cloud
 Description: It provides you with a widget to show your tag cloud with an alternative way. First 5 tags will be on a list and the rest will be on a dropdown. Clicking takes you to the tag page. There are a few preferences you can set in the code.
 Author: stratosg
-Version: 1.1
+Version: 1.2
 Author URI: http://www.stratos.me
 */
 
@@ -13,7 +13,10 @@ Author URI: http://www.stratos.me
 function widget_mytagcloud($args) {
 	global $wpdb;
 	global $wpdb_query;
+	global $wp_rewrite;
 	extract($args);
+	
+	$tag_base = ($wp_rewrite->permalink_structure == '') ? '?tag=' : 'tag/' ;
 	
 	/*-------- PREFERENCES START --------*/
 	$list_tags = 5;//how many tags to show on the list before adding to the dropdown
@@ -38,14 +41,14 @@ function widget_mytagcloud($args) {
 	if(count($tags) > $list_tags){//i have more tags so a list and a dropdown should be rendered
 		echo '<ul>';
 		for($i = 0; $i<$list_tags; $i++){
-			echo '<li><a title="Used '.$tags[$i]['count'].' times" href="'.$site_base.'/tag/'.$tags[$i]['slug'].'">'.$tags[$i]['name'].'</a></li>';
+			echo '<li><a title="Used '.$tags[$i]['count'].' times" href="'.$site_base.'/'.$tag_base.$tags[$i]['slug'].'">'.$tags[$i]['name'].'</a></li>';
 		}
 		echo '</ul><br>';
 		echo '<script lang="javascript">
 				function goOnTagSelect(){
 					var tag = document.getElementById("mytags_select").value;
 					var site_url = "'.$site_base.'";
-					document.location = site_url + "/tag/" +  tag;
+					document.location = site_url + "/'.$tag_base.'" +  tag;
 				}
 			  </script>';
 		echo '<select id="mytags_select" onchange="goOnTagSelect()">
